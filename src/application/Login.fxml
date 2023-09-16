@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UIStartController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="750.0" opacity="0.08" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../bin/Images/login.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="47.0" layoutY="99.0" prefHeight="305.0" prefWidth="262.0" style="-fx-background-color: darkcyan;" AnchorPane.leftAnchor="47.0">
+         <children>
+            <Label layoutX="98.0" layoutY="7.0" prefHeight="54.0" prefWidth="69.0" text="Sign In" textAlignment="CENTER" textFill="#e1fffb">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="Username" layoutX="37.0" layoutY="79.0" onAction="#signIn" prefHeight="27.0" prefWidth="188.0" promptText="Username" style="-fx-text-fill: white; -fx-border-color: #343434; -fx-background-color: darkcyan; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <PasswordField fx:id="Password" layoutX="37.0" layoutY="126.0" onAction="#signIn" prefHeight="27.0" prefWidth="188.0" promptText="Password" style="-fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #343434; -fx-background-color: darkcyan; -fx-text-fill: white;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></PasswordField>
+            <Button fx:id="SignIn" layoutX="37.0" layoutY="213.0" mnemonicParsing="false" onAction="#signIn" prefHeight="27.0" prefWidth="188.0" style="-fx-background-radius: 5; -fx-border-radius: 5;" styleClass="sign" stylesheets="@application.css" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.17763157188892365" green="0.17763157188892365" blue="0.17763157188892365" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Hyperlink fx:id="Forgot" layoutX="80.0" layoutY="250.0" prefHeight="23.0" prefWidth="102.0" text="Forgot Password?" textFill="#500059" underline="true" />
+            <RadioButton fx:id="CustBtn" layoutX="37.0" layoutY="175.0" mnemonicParsing="false" onAction="#signIn" prefHeight="17.0" prefWidth="81.0" text="Customer" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="role" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="ManBtn" layoutX="156.0" layoutY="175.0" mnemonicParsing="false" onAction="#signIn" prefHeight="17.0" prefWidth="69.0" text="Manager" textFill="WHITE" toggleGroup="$role" />
+         </children>
+      </Pane>
+      <Label layoutX="411.0" layoutY="130.0" prefHeight="45.0" prefWidth="238.0" text="Anonymous Cinemas" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="99.0" prefHeight="31.0" prefWidth="108.0" text="Welcome To" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="SignUpLink" layoutX="436.0" layoutY="373.0" mnemonicParsing="false" onAction="#goToSignUp" prefHeight="27.0" prefWidth="188.0" style="-fx-border-radius: 5; -fx-background-radius: 5;" styleClass="sign" stylesheets="@application.css" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.29819992184638977" green="0.4013157784938812" blue="0.38756701350212097" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="426.0" layoutY="331.0" prefHeight="31.0" prefWidth="209.0" text="Don't Have An Account?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="132.0" fitWidth="146.0" layoutX="464.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/Images/company.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="404.0" layoutY="450.0" prefHeight="36.0" prefWidth="44.0" styleClass="media" stylesheets="@application.css">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/Images/linkedin.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="353.0" layoutY="450.0" prefHeight="36.0" prefWidth="44.0" styleClass="media" stylesheets="@application.css">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/Images/download.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="303.0" layoutY="450.0" prefHeight="36.0" prefWidth="44.0" styleClass="media" stylesheets="@application.css">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="47.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/Images/insta.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,136 @@
+.sign{
+	-fx-background-color: #004c4c;
+	-fx-text-fill: white;
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+}
+
+.sign:hover{
+	-fx-border-color: darkcyan;
+	-fx-background-color: #343434;
+	-fx-text-fill: white;
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}
+
+.menuBtn{
+	-fx-background-color: darkcyan;
+	-fx-text-fill: white;
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+}
+
+.menuBtn:hover{
+	-fx-border-color: darkcyan;
+	-fx-background-color: #343434;
+	-fx-text-fill: white;
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}
+
+.logout{
+	-fx-background-color: rgb(0,0,0,0);
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+}
+
+.logout:hover{
+	-fx-border-color: darkcyan;
+	-fx-background-color: #343434;
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+	-fx-text-fill: white;
+}
+
+.active{
+	-fx-background-color: #004c4c;
+	-fx-border-color: #343434;
+	-fx-text-fill: white;
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+}
+
+.active:hover{
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}
+
+.field{
+	-fx-text-fill: white;
+}
+
+.date-picker .text-field {
+    -fx-control-inner-background: #343434;
+    -fx-text-fill: white;
+	-fx-prompt-text-fill: white;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-base: #1d1d1d ;
+    -fx-mark-highlight-color: -fx-light-text-color ;
+}
+
+.spinner .text-field {
+    -fx-control-inner-background: #343434;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+}
+
+.displayField{
+	-fx-text-fill: white;
+	-fx-prompt-text-fill: white;
+	-fx-border-radius: 5;
+  	-fx-background-radius: 5;
+  	-fx-background-color: #343434;
+  	-fx-border-color: #004c4c;
+}
+
+.container1{
+	-fx-border-color: #004c4c;
+	-fx-background-radius: 5;
+	-fx-border-radius: 5;
+	-fx-border-width: 5;
+}
+
+.linear-grad-to-bottom{
+    -fx-background-color: linear-gradient(to bottom, darkcyan, gray
+    );
+}
+
+.table-view .column-header-background{
+	-fx-background-color: darkcyan;
+	-fx-background-radius: 5px, 5px, 0px, 0px;
+ 	-fx-text-fill: white;
+}
+
+.root{
+	-fx-background-color: transparent;
+}
+
+.table-view {
+  -fx-border-radius: 5px;
+  -fx-background-radius: 5px;
+  -fx-background-color: transparent;
+  -fx-border-color: #004c4c
+}
+
+.table-view .column-header, table-view .filler{
+	-fx-background-color: transparent;
+	-fx-size: 30;
+	-fx-fill: blue;
+}
+
+.table-view .column-header .label{
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.table-row-cell:selected{
+	-fx-background-color: #004c4c;
+	-fx-text-fill: white;
+}
+
+.media:hover{
+	-fx-scale-x: 1.2;
+	-fx-scale-y: 1.2;
+}
